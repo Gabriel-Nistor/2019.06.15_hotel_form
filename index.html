@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Bates Motel</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo"><img src="./logo.jpg" height="140px" widht="140px"></div>
+        <h1>Welcome to Bates Motel</h1>
+    </div>
+
+    <div class="form">
+        <h2>Reservation Request</h2>
+        <div class="section">
+            <h3>General Information</h3>
+            <div>Arrival date: <input id="arrival-date" type="date" min="2019-07-01"></div>
+            <div>Nights:
+                <select name="nights">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                </select>
+            </div>
+            <div>Adults:
+                <select name="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div>Children:
+                <select name="Children" class="children">
+                    <option value="0">0</option>
+                    <option value="0">1</option>
+                    <option value="0">2</option>
+                    <option value="0">3</option>
+                    <option value="0">4</option>
+                    <option value="0">5</option>
+                    <option value="0">6</option>
+                </select><br>
+                <span class="small-font">(children over 16 years old will have to pay for full price)</span>
+            </div>
+        </div>
+        <br>
+        <div class="section">
+            <h3>Preferences</h3>
+            <div class="preference">Room type:
+                <input type="radio" name="room-type" value="standard" class="first-room">Standard
+                <input type="radio" name="room-type" value="business">Business
+                <input type="radio" name="room-type" value="suite">Suite
+            </div>
+            <div class="preference">Bed type:
+                <input type="radio" name="bed-type" value="king" class="first-bed">King
+                <input type="radio" name="bed-type" value="double">Double
+                <input type="radio" name="bed-type" value="single">Single
+            </div>
+            <div>Smoking: <input type="checkbox" name="smoking" class="smoking-box"><span class="small-font">(leave
+                    unchecked for non-smokers)</span>
+            </div>
+        </div>
+        <br>
+        <div id="contact" class="section">
+            <h3>Contact Information</h2>
+                <div>Name: <input id="name" type="text" placeholder="(your name)" class="placeholder-fix"></div>
+                <div>Email: <input type="email" placeholder="(your email address)" class="placeholder-fix"></div>
+                <div>Phone: <input type="text" placeholder="(your phone number)" class="phone placeholder-fix"></div>
+        </div>
+        <br><br>
+        <button id="submit-button">Submit Reservation</button>
+        <button id="clear-button">Clear</button>
+    </div>
+
+    <div id="confirmation-box"></div>
+
+    <script src="./myscripts.js"></script>
+</body>
+
+</html>
